@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_termos_de_uso"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="br.com.sumusanalitics.app.TermosDeUsoActivity"
+    tools:showIn="@layout/activity_termos_de_uso"
+    android:orientation="vertical"
+    android:background="@drawable/bem_vindo_cortada"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bem-vindo(a) ao"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:layout_gravity="center_horizontal" />
+
+
+     <ImageView
+         android:layout_width="wrap_content"
+         android:layout_height="300dp"
+         android:src="@drawable/img_termos_uso" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal|center_vertical">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Termo de\n adesão"
+            android:background="#A3A5A8"
+            android:textColor="#FFFFFF"
+            android:onClick="lerTermoAdesao"
+            />
+    <View
+    android:layout_width="10dp"
+    android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Concordar e\n continuar"
+            android:background="#FA7927"
+            android:textColor="#FFFFFF"
+            android:onClick="concordar"
+
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
